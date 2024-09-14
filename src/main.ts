@@ -1,5 +1,8 @@
 import { createApp } from 'vue'
+import WatermarkPlugin from './plugin'
 import './style.css'
 import App from './App.vue'
-
-createApp(App).mount('#app')
+import 'element-plus/dist/index.css'
+const app = createApp(App)
+app.use(WatermarkPlugin)
+app.mount('#app')
